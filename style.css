@@ -1,0 +1,345 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+body{
+    background-color: white;
+    color: black;
+    
+  
+}
+html{
+    scroll-behavior: smooth;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+background-image: url(karan.jpg);
+    /* background-image: url(https://lh3.googleusercontent.com/pw/ABLVV85o3GSy1zo36DGnsMMNWfWf1evqBAs3mhkclmr0EYsm45JqCvwYoH-dYhWJyH0MD9BURUZaXgXORSiPiDy4xlwi_4YSO-8luGDq8f97VhbQsB7fB8-D6Hpl1WGKQDK-KXz87J9e8xco1llh5ivnX44lNZ37dwD-YvY5c1HHrnZZhqmmjrEBGn2DAyIy8q5D_RqSv9_-q3mWpaeBbqLv0N0yoKqGUJNuacvJzOnXt4zycGP4bcjH1QIvYFePaNA4Sm4FbzJRhPrqZuD6iR52qzJjyLgFZ0Xc1e4jrSvrKo8ZNRoYSZXNTv3Uxs--hv0WYV1ES6_rvVORIOCk48yK4Qa9fC6Lvkw0eRRkvy1eHkcuvdmOHA-A38LGPEjo5lIX7qOJ0yo1tYsjZ44kxh0yIQYyLooHRM_-tv0vkF2H-1YaTSKgXB0nUd1fE7kpqlwEuNoeKSvkM9GR0b36WPOhW-V0Ri24oTNt5bA6lafiVLQQ9aplncIXIRSyUsuRh9B1WkgFBowd7_zCEGCkUAK2z37W8XHwg02Fxbbs4Yp8k8SDRJnlHE9JX4X0cINb4GAdDK9PWTGbZGlvfSeym9FW2nDPU5W8O1qPoTD5hNf61xbhEQqMHqHFahwZJzO18Gs11CwFhHmMP1ThHTZsENiiewxc7eCtalFDm-zlxH4-EUIlL9izdToR0mb2YTyLQzrlkwwOLMg4lAi1HD6R2TMDqn8FI69y65pLpTksE7OBKaQSdxaKAvUOFy0D3HVvsxTvbWLWKQkvDLqErzgWUJfT4PKWsL1ao6Hpp0iYgWjRNFzbjC7kxcXPB3wVBVge-C_DtVDbUadSPHs9qOQ63xTLO1FIRB9-R_QfFsylT7m95ELQ3f54864XegljQqvESvLj3k0ACA=w530-h943-s-no-gm?authuser=0); */
+background-size:cover;
+    background-position: center;
+    color: white;
+}
+
+
+.container{
+    padding: 10px 10%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+nav img{
+height: 30px;
+width: 100px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: gold;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: red;
+}
+#about{
+    padding: 80px 0;
+   
+    color: rgb(41, 37, 37);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col1{
+    flex-basis: 35%;
+}
+.about-col1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col2{
+    flex-basis: 60%;
+    
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+}
+.tab-title{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents{
+   list-style: none;
+   margin: 10px 0;
+}
+.tab-contents ul li span{
+color: #ff004f;
+font-size: 18px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*-------servicea-----*/
+#services{
+    padding: 30px 10%;
+}
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.service-list div{
+    background: #262626;
+    color: #fff;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 30px;
+    border-radius: 5px;
+    transition: background 0.5s,transform 0.5s;
+}
+.service-list div i{
+    font-size: 50px;
+}
+.service-list h1{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.sub-title{
+    color: black;
+    font-size: 40px;
+}
+.service-list div:hover{
+  background:rgb(133, 42, 42);
+  transform: translateY(-20px);
+}
+
+
+/* portfilo */
+#portfolio{
+          padding: 30px 10%;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+.work{
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    height: 300px;
+
+    width: 250px;
+ 
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 30px;
+    border-radius: 5px;
+    transition: transform 0.5s;
+}
+
+.work img:hover{
+    background-color: aqua;
+   /* transform: translateY(-10px);
+    width: 300px;
+overflow:auto; */
+transform: scale(1.2);
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(180,180,180,0.1),#c73160);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transition: height 0.5s;
+}
+.work:hover .layer{
+    height: 100%;
+}
+.layer h3{
+    font-size: 25px;
+}
+.layer p{
+    text-transform: capitalize;
+}
+#btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid red;
+    background-color: #c73160;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.4s;
+}
+#btn:hover{
+    background-color: aliceblue;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+.login-box{
+
+height: 100%;
+width: 100%;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+    
+}
+form{
+  
+   max-width: 90%;
+
+    padding: 50px 30px 20px;
+    padding: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+    position: relative;
+  
+}
+.input-form{
+    padding: 30px;
+
+}
+label{
+    padding-right:20px ;
+    font-size: 20px;
+}
+input{
+   background: transparent;
+   border: 0;
+   font-size: 16px;
+   height: 30px;
+   padding-left: 20px;
+   text-align: center;
+}
+#send-message{
+    height: 100px;
+    width: 250px;
+    text-align: center;
+}
+.input-form span{
+    color: red;
+    position: absolute;
+    padding-left: 20px;
+}
+button{
+margin-left: 50%;
+height: 30px;
+width: 50px;
+background-color: red;
+}
+button:hover{
+    background-color: white;
+}
+#contact{
+    padding: 30px 10%;
+    color: black;
+}
+.info h1{
+    font-size: 40px;
+    
+}
+#submit456{
+        color: red;
+        padding-top: 10px;
+}
+
+@media only screen and (max-width:600px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+        
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+}

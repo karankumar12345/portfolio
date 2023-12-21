@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-karan</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/b969acc258.js" crossorigin="anonymous"></script>
+ 
+<body>
+    <div id="header">
+     
+       <div class="container">
+        <nav>
+            <img src="https://i.pinimg.com/474x/88/68/28/8868283944f9e912ed844de6af745d0d.jpg" alt="">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfolio">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+        
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p style="font-size: 40px;">Fronted devoleper</p>
+            <h1>Radha Radha, I'm <br><span>Karan</span> From India</h1>
+        </div>
+       </div> 
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                  <img src="karan.jpg" alt="">
+                </div>
+                  <div class="about-col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hello, I'm Karan Kumar, a passionate and dedicated Frontend Developer currently pursuing my B.Tech in Computer Science and Engineering, currently in the 2nd year. I have a strong foundation in web development and a keen interest in creating intuitive and user-friendly interfaces.</p>
+                    <p>I completed my 10th and 12th education from Jharkhand Academic Council (JAC) with an impressive 86% score. These academic achievements reflect my commitment to excellence in both practical and theoretical aspects of my studies.</p>
+                    <p>As a developer, I have worked on various projects, including a calculator, notes app, and form verification application. These projects showcase my skills in creating functional and efficient web solutions.</p>
+                    
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('Education')"> Education</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Fronted devoleper</span><br> web page created</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Notes </span><br> notes app created</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Btech</span><br>2nd year</li>
+                        </ul>
+                    </div>
+
+                </div>
+           
+        </div>
+    </div>
+
+
+    <!---services-->
+    <div id="services">
+        <div class="service-container">
+            <h1 class="sub-title">My Service</h1>
+            <div class="service-list">
+                <div>
+                <i class="fa-solid fa-code"></i>
+                <h1>Web Devolper</h1>
+                <p>created a fronted website like blog, shop,calculator etc</p>
+                <a href="#">learn more</a>
+               </div>
+            <div>
+            <i class="fa-solid fa-crop"></i>
+              <h1>interactive design</h1>
+                <p>so interactive website created</p>
+                <a href="#">learn more</a>
+        </div>
+     <div>
+            <i class="fa-brands fa-apple"></i>
+               <h1>blog website design</h1>
+                <p>also blog website created </p>
+                <a href="#">learn more</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+     <div id="portfolio">
+        <div class="container-portfolio">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Screenshot 2023-12-21 172321.png" alt="">
+                    <div class="layer">
+                        <h3>Validation Login page</h3>
+                        <p>Its login form you submit the name email mobile numer are worng then its not submit
+                               Created an application for validating and verifying form data
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Screenshot 2023-12-21 172350.png" alt="">
+                    <div class="layer">
+                        <h3>Notes website</h3>
+                        <p>Designed and implemented a notes application with advanced features</p>
+
+                    </div>
+
+
+                </div>
+                <div class="work">
+                    <img src="Screenshot 2023-12-21 172548.png" alt="">
+                    <div class="layer">
+                        <h3>Car Animation</h3>
+                        <p>its so simple game created by animation css </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" id="btn">See More</a>
+        </div>
+     </div>
+
+
+     <!-- contact number -->
+      
+        <div id="contact">
+            <div class="info">
+                <h1>Contact info</h1>
+            </div>
+            <div class="login-box">
+        
+        <form name="submit-to-google-sheet">
+        
+         
+   
+        
+              
+                
+                  <div class="input-form">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter Your Name " id="contact-name" name="Name" onkeyup="validateName()" required>
+                    <span id="name-error"></span>
+                  </div>
+                  <div class="input-form" >
+                    <label>Phone No  </label>
+                    <input type="tel" placeholder="123 456 7890 " id="contact-number" name="Number" onkeyup="validateNumber()" required>
+                    <span id="phone-error"></span>
+                  </div>
+                  <div class="input-form">
+                    <label>Email Id</label>
+                    <input type="email" placeholder="Enter Email " id="contact-email" name="Email" onkeyup="validateEmail()" required>
+                    <span id="email-error"></span>
+                  </div>
+                  <div class="input-form">
+                    <label>Your Message </label>
+                    <input type="text" placeholder="Message we sent " id="send-message" name="Message" onkeyup="validateMessage()" required>
+                    <span id="message-error"></span>
+                  </div>
+          <button onclick="return validateForm()">Submit</button>
+          <span id="submit-error"></span>
+         
+                </form>
+            
+            </div>
+        
+           
+            
+                   
+              
+        
+              
+            
+          
+                </form>
+            
+          
+
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName('tab-links')
+var tabcontents=document.getElementsByClassName('tab-contents')
+
+
+function opentab(tabname){
+for(tablink of tablinks){
+    tablink.classList.remove("active-link")
+}
+for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab")
+}
+event.currentTarget.classList.add("active-link")
+document.getElementById(tabname).classList.add("active-tab")
+}
+
+
+
+
+
+var nameerror=document.getElementById('name-error')
+              var numbererror=document.getElementById('phone-error')
+              var emailerror=document.getElementById('email-error')
+            
+              var submiterror=document.getElementById('submit-error')
+              function validateName(){
+                var name =document.getElementById('contact-name').value
+                if(name.length==0){
+                  nameerror.innerHTML="name is requried"
+                  return false
+                }
+                if(!name.match(/^[A-Za-z]*\s{1}[A-za-z]*$/)){
+                  nameerror.innerHTML="full name write"
+                  return false
+                }
+                else{nameerror.innerHTML=''
+                return true
+              }
+              }
+              function validateNumber(){
+                var number =document.getElementById('contact-number').value
+                if(number.length==0){
+                  numbererror.innerHTML="number is requried"
+                  return false
+                }
+                if(number.length !== 10){
+                  numbererror.innerHTML="full number fill "
+                  return false
+                }
+               
+                if(!number.match(/^[0-9]{10}$/)){
+                  numbererror.innerHTML='phone no is required'
+                  return false
+                }
+            
+                numbererror.innerHTML=''
+                return true
+              }
+              function validateEmail(){
+                var email =document.getElementById('contact-email').value
+                if(email.length==0){
+                  emailerror.innerHTML="email is requried"
+                  return false
+                }
+              
+                if(!email.match(/^[A-za-z\._\-[0-9]*[@][a-z]*[\.][a-z]{2,4}$/)){
+                  emailerror.innerHTML='invalid email'
+                  return false
+                }
+            
+                emailerror.innerHTML=''
+                return true
+              }
+              
+    
+        
+    
+              function validateForm(){
+                if(!validateName() || !validateNumber() || !validateEmail() || !validateMessage()){
+                  submiterror.innerHTML="please fix the error"
+                  return false
+               
+                  
+                }
+                else{
+                    emailerror.innerHTML=''
+                    nameerror.innerHTML=''
+                    numbererror.innerHTML=''
+                  submiterror.innerHTML=''
+                    return true
+                }
+             
+              }
+      
+
+
+</script>
+<script>
+const scriptURL = '  https://script.google.com/macros/s/AKfycbyxL4TztXxGnFjLb8UFuZ1LkWNTvJf2JMOP8siHcgi-zW7AbRMoC3S5Si3w63ZYELfI/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const mes=document.getElementById("submit-error")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            mes.innerHTML="message sent succesfully"
+            setTimeout(function(){
+                mes.innerHTML=""
+            },5000)
+               form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
